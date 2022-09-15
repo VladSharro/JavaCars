@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1280.0" spacing="20.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo1.Second">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <SplitPane dividerPositions="0.8110091743119267" orientation="VERTICAL" prefHeight="740.0" prefWidth="1240.0">
+     <items>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="307.0" prefWidth="605.0">
+            <children>
+               <AnchorPane layoutX="-21.0" layoutY="-23.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" AnchorPane.leftAnchor="-21.0" AnchorPane.rightAnchor="-21.0">
+                  <children>
+                     <AreaChart fx:id="ch" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="452.0" prefWidth="1280.0" title="Gov" AnchorPane.bottomAnchor="-52.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                       <xAxis>
+                         <CategoryAxis side="BOTTOM" fx:id="xAx" />
+                       </xAxis>
+                       <yAxis>
+                         <NumberAxis fx:id="yAx" side="LEFT" />
+                       </yAxis>
+                     </AreaChart>
+                  </children>
+               </AnchorPane>
+            </children>
+         </AnchorPane>
+       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="164.0" prefWidth="1238.0">
+            <children>
+               <Text layoutX="23.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="t" wrappingWidth="16.10546875" />
+               <Button fx:id="Bott" layoutX="104.0" layoutY="81.0" mnemonicParsing="false" text="Click" />
+               <TextField fx:id="t_text" layoutX="50.0" layoutY="14.0" />
+               <Button fx:id="BtnClear" layoutX="584.0" layoutY="14.0" mnemonicParsing="false" text="Clear" />
+               <Button fx:id="BtnBack" layoutX="896.0" layoutY="19.0" mnemonicParsing="false" onAction="#switchtomain" text="Get back" />
+            </children>
+         </AnchorPane>
+     </items>
+   </SplitPane>
+   <AnchorPane prefHeight="5.0" prefWidth="1240.0" />
+</VBox>
